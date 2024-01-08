@@ -1,0 +1,22 @@
+<div class="card-style bg-white rounded shadow-lg">
+    <img class="w-full h-48 object-cover" [src]="game.background_image" alt="Imagen de la tarjeta">
+    <div class="px-6 py-4">
+      <div class="card-style font-bold text-xl mb-2"><p>{{game.name}}</p></div>
+      <p class="text-gray-700 text-base">
+        {{game.name}}
+      </p>
+    </div>
+    @if(buttonVisible){
+      <div class="px-6 py-4">
+        <button (click)="addGame()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Add
+        </button>
+      </div>
+    }@else{
+      <div class="px-6 py-4">
+        <button (click)="kickGame()" class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+          Remove
+        </button>
+      </div>
+    }
+  </div>

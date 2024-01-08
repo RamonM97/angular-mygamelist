@@ -1,0 +1,5 @@
+<div class="body-background grid md:grid-cols-3 sm:grid-cols-1 gap-4">
+  @for (game of games; track $index) {
+    <app-game-card [game]="game"></app-game-card>
+}
+</div>

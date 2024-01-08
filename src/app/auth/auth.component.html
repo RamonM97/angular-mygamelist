@@ -1,0 +1,13 @@
+<app-navmenu></app-navmenu>
+<div class="flex bg-slate-100 w-screen h-screen antialiased text-slate-300 selection:bg-blue-600 selection:text-white">
+    <div class="body-background grid grid-cols-2 gap-4">
+    <div class="flex relative w-screen">
+        
+        <app-sidemenu></app-sidemenu>
+        
+            <div class="text-black w-full">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
